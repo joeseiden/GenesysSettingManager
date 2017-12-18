@@ -1,6 +1,6 @@
-class CreateAttributes < ActiveRecord::Migration[5.1]
+class CreateCharacteristics < ActiveRecord::Migration[5.1]
   def change
-    create_table :attributes do |t|
+    create_table :characteristics do |t|
       t.string :name, null: false
       t.text :description
 
