@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: characteristics
+# Table name: settings
 #
 #  id          :integer          not null, primary key
 #  name        :string           not null
@@ -9,8 +9,6 @@
 #  updated_at  :datetime         not null
 #
 
-class Characteristic < ApplicationRecord
+class Setting < ApplicationRecord
   validates :name, presence: true
-  validates :name, uniqueness: true
-  has_many :skills
 end
